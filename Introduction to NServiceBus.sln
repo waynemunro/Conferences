@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSB01SampleReceiver", "NSB0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSB01SampleMessages", "NSB01SampleMessages\NSB01SampleMessages.csproj", "{E14A9941-3D59-4A99-A8B0-15CE5C862C87}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Events", "2 - Events", "{F874C814-3B6D-4FA8-AA29-A982307A8FEB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - RequestReply - CommandsEvents", "2 - RequestReply - CommandsEvents", "{F874C814-3B6D-4FA8-AA29-A982307A8FEB}"
 	ProjectSection(SolutionItems) = preProject
 		2 - Events Readme.md = 2 - Events Readme.md
 	EndProjectSection

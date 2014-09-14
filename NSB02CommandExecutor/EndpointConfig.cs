@@ -20,7 +20,8 @@ namespace NSB02CommandExecutor
                 DataDirectory = @"~\..\RavenDB\Data"
             }.Initialize();
 
-            Configure.Instance.DefiningCommandsAs(t => t.Namespace != null && t.Namespace.EndsWith(".Commands"));
+			Configure.Instance.DefiningMessagesAs( t => t.Namespace != null && t.Namespace.EndsWith( "NSB02SampleMessages" ) );
+			Configure.Instance.DefiningCommandsAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Commands" ) );
             Configure.Instance.DefiningEventsAs(t => t.Namespace != null && t.Namespace.EndsWith(".Events"));
             Configure.Instance.RavenPersistenceWithStore(embeddedSore);
         }

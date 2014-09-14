@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Topics.Radical;
+using NSB02SampleMessages;
 
 namespace NSB02CommandExecutor
 {
@@ -17,6 +18,11 @@ namespace NSB02CommandExecutor
             using (ConsoleColor.Cyan.AsForegroundColor())
             {
                 Console.WriteLine("Received DoSomethingForMe command: {0}", message.Content);
+
+				this.Bus().Reply( new DoSomethingForMeReply() 
+				{
+					Content = "Reply -> " + message.Content
+				} );
 
                 this.Bus().Publish<IHaveDoneSomething>(e => 
                 {
